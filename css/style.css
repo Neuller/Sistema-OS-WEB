@@ -1,0 +1,255 @@
+/** CONFIGURAÇÕES PADRÃO **/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.Personalizado{
+    padding-top:0px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+.radius{
+  border-radius: 5% !important;
+}
+
+.Estilo{
+  width: 100% !important;
+  float: left !important;
+  padding: 3% 4% !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+.text-center,.img-responsive {
+    margin: 0 auto !important;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+/** BACKGROUNDS **/
+.bgGradient{
+	background: linear-gradient(to right, #2796c3, #86dafc);
+}
+
+.bgBlack{
+	background-color: #000;
+}
+
+.bgWhite{
+  background-color: #FFF;
+}
+
+.bgGray{
+	background-color: #e6e6e6
+}
+
+/** CABEÇALHO **/
+.cabecalho{
+  width: 100%;
+  float: left;
+  padding: 1% 2%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.btClose{
+  font-size: 1.5em;
+  color: #FFF;
+  float: right;
+  cursor: pointer;
+  margin: 2%  3% 0 0;
+}
+
+.logo{
+  width: 56px;
+  height: 56px;
+  float: left;
+  background: url(../img/Logo-Mobile.png) center center/56px no-repeat;
+}
+
+.btMenu{
+  width: 56px;
+  height: 56px;
+  float: right;
+  border-radius: 56px;
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.menu{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.menu,ul{
+  width: 100%;
+  float: left;
+  text-align: center;
+
+}
+
+.menu,ul,li{
+  padding: 1%;  
+}
+
+.menu,ul,li,a{
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+/** PRINCIPAL **/
+.conteudo{
+  width: 100% !important;
+  text-align: center !important;
+  margin-bottom: 3% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.conteudo,img{
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.conteudo,.textos{
+  padding: 7% !important;
+}
+
+.conteudo,.textos,h4{
+  font-size: 2em !important;
+  color: #000 !important;
+  font-weight: bold !important;
+  margin-top: 1% !important;
+}
+
+.box {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.boxHTML{
+  box-sizing: border-box;
+  padding: 10px;
+  flex-direction: column;
+  width: calc(100% / 2);
+}
+
+/** ATENDIMENTO **/
+.Atendimento{
+  display: flex;
+  margin:5px;
+  flex-direction: row;
+  width: calc(100% / 1);
+}
+
+.Opacidade{
+  opacity: 0.7;
+}
+
+.ConteudoAtendimento{
+  text-align: center !important;
+  margin-bottom: 3% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.BoxAtendimento {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/** RODAPE **/
+.rodape{
+	width: 100% !important;
+	float: left !important;
+	padding: 1% 1% !important;
+	text-align: center !important;
+	margin-top: 10px !important;
+}
+
+.rodapeSobre{
+  width: 100% !important;
+  float: left !important;
+  padding: 1% 1% !important;
+  text-align: center !important;
+}
+
+.direitos{
+	color: #FFF;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 850px){
+  
+  /** CABEÇALHO **/
+  .btMenu{
+    display: none !important;
+  }
+
+  .BoxAtendimento {
+    flex-direction: column;
+    width: calc(100% / 1);
+    font-size: 10px;
+  }
+
+  .textCarousel{
+    font-size: 1em;
+    display: none !important;
+  }
+
+}
+
+@media screen and (min-width: 850px){
+    .box {
+    flex-direction: column;
+    width: calc(100% / 3);
+  }
+
+    .BoxAtendimento {
+    flex-direction: column;
+    width: calc(100% / 4);
+  }
+
+   .boxSobre {
+    flex-direction: column;
+    width: calc(100% / 1);
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  /** TEXTO INTERNO CAROUSEL **/
+  .textCarousel{
+    font-size: 1em;
+    display: none !important;
+  }
+
+}
+
+
+  

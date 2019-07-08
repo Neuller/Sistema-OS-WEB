@@ -1,0 +1,16 @@
+/* CONFIGURAÇÕES ERP */
+
+.centralizarERP{
+    display: table;
+    margin: 0 auto;
+}
+
+.align{
+	text-align: center; /* para firefox */
+    text-align-last: center; /* para chrome */
+}
+
+.required:after {
+  content:" *"; 
+  color: blue;
+}

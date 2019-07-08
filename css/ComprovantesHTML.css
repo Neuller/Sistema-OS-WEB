@@ -1,0 +1,15 @@
+#Coluna1{
+	width: 300px;
+	height: 75px;
+	float: left;
+}
+
+#Coluna2{
+	width: 300px;
+	height: 75px;
+	float: right;
+}
+
+.item {
+  flex-wrap: wrap; //Deixa as divs uma embaixo da outra   
+ }
