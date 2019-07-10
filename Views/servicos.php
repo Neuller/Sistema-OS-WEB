@@ -35,7 +35,7 @@
 		 <div class="row">
 
 		 	<div class="col-sm-12" align="center">
-		 		<span class="btn btn-default" id="novoServicoBtn">Cadastrar Novo</span>
+		 		<span class="btn btn-primary" id="novoServicoBtn">Cadastrar Serviço</span>
 		 	</div>
 
 		 </div>
@@ -161,23 +161,22 @@
 </html>
 	
 	<script type="text/javascript">
-
+		
 		$(document).ready(function(){
 
             $('#tabelaServicosEntrada').load('servicos/tabelaServicosEntrada.php');
 
 			$('#novoServicoBtn').click(function(){
 
-				esconderSessao();
-
 				$('#novoServico').load('servicos/cadastrarServico.php');
 				$('#novoServico').show();
 
-			});
+		});
 
 		});
 
 		function esconderSessao(){
+			
 			$('#novoServico').hide();
 		}
 

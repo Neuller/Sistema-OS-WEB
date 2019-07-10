@@ -22,7 +22,7 @@ require_once "../../Classes/Conexao.php";
 				<option value="0">Sem Cliente</option>
 				<?php
 
-				$sql="SELECT ID_Cliente, Nome, Sobrenome FROM clientes";
+				$sql="SELECT ID_Cliente, Nome, Sobrenome FROM clientes ORDER BY ID_CLIENTE DESC";
 
 				$result=mysqli_query($conexao,$sql);
 
@@ -59,14 +59,22 @@ require_once "../../Classes/Conexao.php";
 			<label class="required">NÚMERO SERIAL</label>
 			<input type="text" class="form-control input-sm" id="serialnumber" name="serialnumber">
 			<p></p>
-			<span class="btn btn-primary" id="btnAddServico">Cadastrar</span>
+			<span class="btn btn-success" id="btnAddServico">Cadastrar</span>
+			<span class="btn btn-danger" id="btnCancelarServico">Cancelar</span>
 		</form>
 	</div>
 </div>
 
 
 <script type="text/javascript">
+
 		$(document).ready(function(){
+
+			$('#btnCancelarServico').click(function(){
+
+				esconderSessao();
+
+		    });
 
 			$('#btnAddServico').click(function(){
 
@@ -93,6 +101,7 @@ require_once "../../Classes/Conexao.php";
 							$('#frmNovoServico')[0].reset();
 							alertify.success("Cadastro com Sucesso");
 							$('#tabelaServicosEntrada').load('servicos/tabelaServicosEntrada.php');
+							esconderSessao();
 						}else{
 							alertify.error("Não foi possível Cadastrar");
 						}

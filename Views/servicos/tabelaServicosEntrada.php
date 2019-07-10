@@ -9,7 +9,7 @@
 
 	$obj= new servicos();
 
-	$sql="SELECT ID_Servico, ID_Cliente, ID_Status, Equipamento, Info, SerialNumber, Preco, DataCadastro FROM servicos";
+	$sql="SELECT ID_Servico, ID_Cliente, ID_Status, Equipamento, Info, SerialNumber, Preco, DataCadastro FROM servicos ORDER BY ID_Servico DESC";
 
 	$result=mysqli_query($conexao,$sql);
 	
@@ -89,6 +89,7 @@
 		</td>
 
 	</tr>
+	
 <?php endwhile; ?>
 
 </table>
